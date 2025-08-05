@@ -3,5 +3,4 @@ from .views import *
 
 urlpatterns = [
     path('',MenuApiView.as_view()),
-    
 ]
