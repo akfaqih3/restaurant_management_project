@@ -4,7 +4,8 @@ from .models import Menu
 from rest_framework.generics import ListAPIView
 
 
-class MenuAPIView(ListAPIView):
+class MenuApiView(ListAPIView):
 
     queryset = Menu.objects.all()
-    fields = "__all__"
+    serializer_class = MenuSerializer
+
