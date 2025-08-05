@@ -4,7 +4,6 @@ from .models import Menu
 from rest_framework.generics import ListAPIView
 
 
-
 class MenuAPIView(ListAPIView):
 
     queryset = Menu.objects.all()
