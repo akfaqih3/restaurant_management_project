@@ -1,0 +1,10 @@
+<html>
+    <head>
+    </head>
+    <body>
+        Menu
+        {% for item in menu %}
+            <p> {{item.name}} - ${{item.price}}</p>
+        {% endfor %}
+    </body>
+</html>
