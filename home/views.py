@@ -4,4 +4,4 @@ from orders.models import Menu
 
 def home(request):
     menu = Menu.objects.all()
-    return render(request, 'home.index', context={'menu':menu})
+    return render(request, 'home.html', context={'menu':menu})
