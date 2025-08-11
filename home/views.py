@@ -18,3 +18,9 @@ def custom_404(request, exception):
     This function to handle page not found error
     """
     return render(request,'404.html', status=404)
+
+
+
+
+def about(request):
+    return render(request,'about.html')
