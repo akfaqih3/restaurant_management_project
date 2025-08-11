@@ -1,10 +1,39 @@
 <html>
     <head>
+        <style>
+            body{
+                font-family:'Helvetica', 'Arial';
+                font-size:16px;
+                line-height:1.6;
+                color:#333;
+            }
+            nav{
+                display:flex;
+                justify-content:space-between;
+            }
+            h2{
+                text-align:center;
+            }
+        </style>
     </head>
     <body>
-        Menu
+        <nav>
+            <h2>
+                my restuarant
+            </h2>
+            <ul>
+                <li>
+                    <p>home</p>
+                </li>
+            </ul>
+        </nav>
+        <div>
+        <h2>
+            menu
+        </h2>
         {% for item in menu %}
             <p> {{item.name}} - ${{item.price}}</p>
         {% endfor %}
+        </div>
     </body>
 </html>
