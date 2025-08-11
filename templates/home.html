@@ -26,7 +26,9 @@
                     <p>home</p>
                 </li>
                 <li>
-                    <a href="{% url 'home:about' %}"/>
+                    <a href="{% url 'home:about' %}">
+                        About 
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -35,7 +37,7 @@
             menu
         </h2>
         {% for item in menu %}
-            <p> {{item.name}} - ${{item.price}}</p>
+            <p style="color:#000;font-size:16"> {{item.name}} - ${{item.price}}</p>
         {% endfor %}
         </div>
     </body>
